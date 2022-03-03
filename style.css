@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #99ffdd;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*--- GAME PIECES ---*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 400px;
+  margin: 0 auto;
+}
+
+.container input {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #000;
+  cursor: pointer;
+}
+
+.container input:hover {
+  border: none;
+}
+
+.container input:nth-child(1) {
+  border-radius: 100% 0 0 0;
+  background-color: #00ff00;
+}
+
+.container input:nth-child(2) {
+  border-radius: 0 100% 0 0;
+  background-color: #ffff00;
+}
+
+.container input:nth-child(3) {
+  border-radius: 0 0 0 100%;
+  background-color: #ff0000;
+}
+
+.container input:nth-child(4) {
+  border-radius: 0 0 100% 0;
+  background-color: #0000ff;
+}
+
+/*--- START BUTTON ---*/
+
+.botao {
+  width: 100px;
+  margin: 1.5rem auto;
+}
+
+.botao input {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #22ccff;
+  line-height: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.botao input:hover {
+  background: #22cccc;
+}
